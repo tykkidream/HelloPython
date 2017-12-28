@@ -1,11 +1,13 @@
 import pygame
+from pygame.sprite import Sprite
 
 """
 定义飞船
 """
 
-class Ship():
+class Ship(Sprite):
     def __init__(self, screen, ai_setting):
+        super(Ship, self).__init__()
         self.screen = screen
         self.ai_setting = ai_setting
 
