@@ -6,6 +6,8 @@ while True:
     rw = RandomWalk(50000)
     rw.fill_walk()
 
+    plt.figure(figsize=(10, 6), dpi=128)
+
     point_numberrs = list(range(rw.num_points))
     plt.scatter(rw.x_values, rw.y_values, c=point_numberrs, cmap=plt.cm.Blues, edgecolors="none", s = 1)
 
